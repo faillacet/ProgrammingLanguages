@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2021-10-19 16:02:08.7989287 UTC
+2021-10-26 00:19:38.2196504 UTC
 
 interface LambdaNat-0.1.0.0-4B7roTwwXlI2zWJKCli09t:Paths_LambdaNat 8064
-  interface hash: 65ade2d43fb458391b79314f22d47335
-  ABI hash: 4a79f849fb4b026f0143cb843dddb2a3
+  interface hash: 7a49877f92eb80156baaeadf3f3bff01
+  ABI hash: ed4eca18ff6e451c0792e3bd8a5a3674
   export-list hash: 650eb4577462588b2620c345f736c1ad
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 1df48ecb4d8b3074aa4fc0868fc29aef
@@ -64,14 +64,14 @@ add624670f8be3e86b828c7d54e85f35
   $trModule4 :: GHC.Prim.Addr#
   {- HasNoCafRefs,
      Unfolding: ("LambdaNat-0.1.0.0-4B7roTwwXlI2zWJKCli09t"#) -}
-a064e49f1745045b580771d91b0d2a57
+1c035c71be86fc0f9c855064bec743fd
   getBinDir :: GHC.Types.IO GHC.IO.FilePath
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: InlineRule (0, True, True)
                 Paths_LambdaNat.getBinDir1
                   `cast`
                 (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
-b0c25d74d4df4e2a99a4df6e48527f67
+cc536f4ed503b1232c099f6e0c3d3229
   getBinDir1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
@@ -83,7 +83,7 @@ b0c25d74d4df4e2a99a4df6e48527f67
                    Paths_LambdaNat.getBinDir5
                    Paths_LambdaNat.getBinDir2
                    eta) -}
-7ed8db927a47a1b5502bea62a549d0be
+ac56bf411bee729a4a38de003b3c8a67
   getBinDir2 ::
     GHC.Exception.Type.SomeException
     -> GHC.Prim.State# GHC.Prim.RealWorld
@@ -108,14 +108,14 @@ b0c25d74d4df4e2a99a4df6e48527f67
                         wild
                         eta
                    GHC.Types.True -> (# eta, Paths_LambdaNat.getBinDir3 #) } }) -}
-e298873e398d860cacea95a7042049ec
+94b5ca17409a500d560176adc5ba6199
   getBinDir3 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    Paths_LambdaNat.getBinDir4) -}
-525e33a1d7f265f42fa471cc5d50e6cd
+aa089689c4bbfb068aaa411611c7eaa4
   getBinDir4 :: GHC.Prim.Addr#
   {- HasNoCafRefs,
-     Unfolding: ("/home/trentonfaillace/programming-languages-2021/Lab1-Lambda-Calculus/LambdaNat0/.stack-work/install/x86_64-linux-tinfo6/lts-13.12/8.6.4/bin"#) -}
+     Unfolding: ("/home/trentonfaillace/ProgrammingLanguages/Assignment2/LambdaNat2/.stack-work/install/x86_64-linux-tinfo6/lts-13.12/8.6.4/bin"#) -}
 4b04329a7f87cf65168520fdfadaa342
   getBinDir5 ::
     GHC.Prim.State# GHC.Prim.RealWorld
@@ -148,14 +148,14 @@ e298873e398d860cacea95a7042049ec
 9164e672db45a1974424835bf60e4354
   getBinDir7 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("LambdaNat_bindir"#) -}
-e454a84995f1fbc73cd468834df9d15c
+3162fe20527d83a321b2d2eb294ca577
   getDataDir :: GHC.Types.IO GHC.IO.FilePath
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: InlineRule (0, True, True)
                 Paths_LambdaNat.getDataDir1
                   `cast`
                 (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
-9968445e12960fb91154ebd346d32eb8
+298c7a4249f0ed66871850fae412fe7b
   getDataDir1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
@@ -167,7 +167,7 @@ e454a84995f1fbc73cd468834df9d15c
                    Paths_LambdaNat.getDataDir5
                    Paths_LambdaNat.getDataDir2
                    eta) -}
-0fe5ae692fb9f04562378a3256289edc
+3759f0c075a6b321c71e32cc2746dd59
   getDataDir2 ::
     GHC.Exception.Type.SomeException
     -> GHC.Prim.State# GHC.Prim.RealWorld
@@ -192,14 +192,14 @@ e454a84995f1fbc73cd468834df9d15c
                         wild
                         eta
                    GHC.Types.True -> (# eta, Paths_LambdaNat.getDataDir3 #) } }) -}
-5df7b8ef1017eb1b0763e9e23ff3e8ce
+e9c702e72cfd3256dd74a78a055b116b
   getDataDir3 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    Paths_LambdaNat.getDataDir4) -}
-36faba25c73a71b764780dcac71fd219
+5bc521b502b662e39addd6ac4e7f6434
   getDataDir4 :: GHC.Prim.Addr#
   {- HasNoCafRefs,
-     Unfolding: ("/home/trentonfaillace/programming-languages-2021/Lab1-Lambda-Calculus/LambdaNat0/.stack-work/install/x86_64-linux-tinfo6/lts-13.12/8.6.4/share/x86_64-linux-ghc-8.6.4/LambdaNat-0.1.0.0"#) -}
+     Unfolding: ("/home/trentonfaillace/ProgrammingLanguages/Assignment2/LambdaNat2/.stack-work/install/x86_64-linux-tinfo6/lts-13.12/8.6.4/share/x86_64-linux-ghc-8.6.4/LambdaNat-0.1.0.0"#) -}
 7ba41e7af003fea236280b3946ea4d5f
   getDataDir5 ::
     GHC.Prim.State# GHC.Prim.RealWorld
@@ -232,7 +232,7 @@ e454a84995f1fbc73cd468834df9d15c
 4cede0d1ada386a155cf0e4145a75f1c
   getDataDir7 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("LambdaNat_datadir"#) -}
-ff4e003b780f5d6863691fa727dc7e05
+5d8fefc8b705de07763bc18856bcfbb1
   getDataFileName :: GHC.IO.FilePath -> GHC.Types.IO GHC.IO.FilePath
   {- Arity: 2, Strictness: <L,U><S,U>,
      Unfolding: InlineRule (0, True, True)
@@ -240,7 +240,7 @@ ff4e003b780f5d6863691fa727dc7e05
                   `cast`
                 (<GHC.IO.FilePath>_R
                  ->_R Sym (GHC.Types.N:IO[0] <GHC.IO.FilePath>_R)) -}
-1abae4dbec6d4302b19d98d45512b805
+cb45f81cc904c72caffd6d4cc3f9d8e6
   getDataFileName1 ::
     GHC.IO.FilePath
     -> GHC.Prim.State# GHC.Prim.RealWorld
@@ -264,14 +264,14 @@ ff4e003b780f5d6863691fa727dc7e05
 b66545b0dca14e8dc5d0b781187c578a
   getDataFileName2 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("/"#) -}
-e9d76bd4ac7290545f3cb97f16380e21
+d3c6aaef451895e8966e68bb96fe471d
   getDynLibDir :: GHC.Types.IO GHC.IO.FilePath
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: InlineRule (0, True, True)
                 Paths_LambdaNat.getDynLibDir1
                   `cast`
                 (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
-c2d0953198c64b98525e4fa010f29646
+cb0beef5f4caf7c0594c9d492894cda8
   getDynLibDir1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
@@ -283,7 +283,7 @@ c2d0953198c64b98525e4fa010f29646
                    Paths_LambdaNat.getDynLibDir5
                    Paths_LambdaNat.getDynLibDir2
                    eta) -}
-98d83ca499749d53c3ebb15e4d4a50d2
+b6fefb0ff5660e48496112928c741ed2
   getDynLibDir2 ::
     GHC.Exception.Type.SomeException
     -> GHC.Prim.State# GHC.Prim.RealWorld
@@ -308,14 +308,14 @@ c2d0953198c64b98525e4fa010f29646
                         wild
                         eta
                    GHC.Types.True -> (# eta, Paths_LambdaNat.getDynLibDir3 #) } }) -}
-50c91955a7ad9ae50b27dab37b5851f7
+20280f0d6ca021c39ebc4f2fa8e6170a
   getDynLibDir3 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    Paths_LambdaNat.getDynLibDir4) -}
-be4f976565ea679dac151d6dff53a263
+cc1445df806ecf8836e56a0d2a2bf8c8
   getDynLibDir4 :: GHC.Prim.Addr#
   {- HasNoCafRefs,
-     Unfolding: ("/home/trentonfaillace/programming-languages-2021/Lab1-Lambda-Calculus/LambdaNat0/.stack-work/install/x86_64-linux-tinfo6/lts-13.12/8.6.4/lib/x86_64-linux-ghc-8.6.4"#) -}
+     Unfolding: ("/home/trentonfaillace/ProgrammingLanguages/Assignment2/LambdaNat2/.stack-work/install/x86_64-linux-tinfo6/lts-13.12/8.6.4/lib/x86_64-linux-ghc-8.6.4"#) -}
 578e01e3c3d1f7b00c0cf33eb33ea401
   getDynLibDir5 ::
     GHC.Prim.State# GHC.Prim.RealWorld
@@ -348,14 +348,14 @@ bef6cf88f1b7fcac11e39c455a9f09da
 fdfe00bc64e735ecb09266b155618192
   getDynLibDir7 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("LambdaNat_dynlibdir"#) -}
-55f52084a4aef9e2f76143e77d723b4b
+440a5ef51f46228a2aa12f2df0e50db1
   getLibDir :: GHC.Types.IO GHC.IO.FilePath
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: InlineRule (0, True, True)
                 Paths_LambdaNat.getLibDir1
                   `cast`
                 (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
-826aa0bd7a23a42881c099b58b9d46df
+bfc9f8c97fc66fc7e076282c432b70cf
   getLibDir1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
@@ -367,7 +367,7 @@ fdfe00bc64e735ecb09266b155618192
                    Paths_LambdaNat.getLibDir5
                    Paths_LambdaNat.getLibDir2
                    eta) -}
-1318d70553e05e87fd6f8e5ce2f53a6e
+38554b7c0952e9aac2c04eaafeab1c7e
   getLibDir2 ::
     GHC.Exception.Type.SomeException
     -> GHC.Prim.State# GHC.Prim.RealWorld
@@ -392,14 +392,14 @@ fdfe00bc64e735ecb09266b155618192
                         wild
                         eta
                    GHC.Types.True -> (# eta, Paths_LambdaNat.getLibDir3 #) } }) -}
-9a9328d160c7efbb1ca06af51a543026
+1c7af1d2f3b70c7ec26d5fbc4aede969
   getLibDir3 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    Paths_LambdaNat.getLibDir4) -}
-4b12f088bc99163a8bc4ef3181ccc249
+9bc5ac76ecef95f9069890f3e8f8a5d9
   getLibDir4 :: GHC.Prim.Addr#
   {- HasNoCafRefs,
-     Unfolding: ("/home/trentonfaillace/programming-languages-2021/Lab1-Lambda-Calculus/LambdaNat0/.stack-work/install/x86_64-linux-tinfo6/lts-13.12/8.6.4/lib/x86_64-linux-ghc-8.6.4/LambdaNat-0.1.0.0-4B7roTwwXlI2zWJKCli09t"#) -}
+     Unfolding: ("/home/trentonfaillace/ProgrammingLanguages/Assignment2/LambdaNat2/.stack-work/install/x86_64-linux-tinfo6/lts-13.12/8.6.4/lib/x86_64-linux-ghc-8.6.4/LambdaNat-0.1.0.0-4B7roTwwXlI2zWJKCli09t"#) -}
 db75e56a3f7b028b04c4d4f82d091a14
   getLibDir5 ::
     GHC.Prim.State# GHC.Prim.RealWorld
@@ -432,14 +432,14 @@ db75e56a3f7b028b04c4d4f82d091a14
 3f1078b79ea723eedcf50dea39a31035
   getLibDir7 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("LambdaNat_libdir"#) -}
-2586f348aa6956b5132832be6d1ac6d5
+4f3c3a00f90fced2aabadeaae047051e
   getLibexecDir :: GHC.Types.IO GHC.IO.FilePath
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: InlineRule (0, True, True)
                 Paths_LambdaNat.getLibexecDir1
                   `cast`
                 (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
-7dea9600d7873fd2c4f69aa14c467634
+f93b2be7db57bac82767c87958968980
   getLibexecDir1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
@@ -451,7 +451,7 @@ db75e56a3f7b028b04c4d4f82d091a14
                    Paths_LambdaNat.getLibexecDir5
                    Paths_LambdaNat.getLibexecDir2
                    eta) -}
-4cb203097c44ecdf3c3084815d3ab97b
+7d1c1fccf53094f99032582747e52457
   getLibexecDir2 ::
     GHC.Exception.Type.SomeException
     -> GHC.Prim.State# GHC.Prim.RealWorld
@@ -476,14 +476,14 @@ db75e56a3f7b028b04c4d4f82d091a14
                         wild
                         eta
                    GHC.Types.True -> (# eta, Paths_LambdaNat.getLibexecDir3 #) } }) -}
-e8b93a7f5fe3887236e89fb6c0405fb8
+bbd886cdbed2d6c0b2fc5ab96af77029
   getLibexecDir3 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    Paths_LambdaNat.getLibexecDir4) -}
-afe08c42bd089e273633f16ca6198031
+699ea370c1f11f22232a216587571500
   getLibexecDir4 :: GHC.Prim.Addr#
   {- HasNoCafRefs,
-     Unfolding: ("/home/trentonfaillace/programming-languages-2021/Lab1-Lambda-Calculus/LambdaNat0/.stack-work/install/x86_64-linux-tinfo6/lts-13.12/8.6.4/libexec/x86_64-linux-ghc-8.6.4/LambdaNat-0.1.0.0"#) -}
+     Unfolding: ("/home/trentonfaillace/ProgrammingLanguages/Assignment2/LambdaNat2/.stack-work/install/x86_64-linux-tinfo6/lts-13.12/8.6.4/libexec/x86_64-linux-ghc-8.6.4/LambdaNat-0.1.0.0"#) -}
 89f2418a92f7223bd5f4c8d0c9ed2b52
   getLibexecDir5 ::
     GHC.Prim.State# GHC.Prim.RealWorld
@@ -516,14 +516,14 @@ afe08c42bd089e273633f16ca6198031
 2cf7d0948295cab87480139632f21b7f
   getLibexecDir7 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("LambdaNat_libexecdir"#) -}
-eef0e439d39bfa76a2349aa7085e1d88
+49f6f85b3429fd1ba8b7deb36b6d7e1c
   getSysconfDir :: GHC.Types.IO GHC.IO.FilePath
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: InlineRule (0, True, True)
                 Paths_LambdaNat.getSysconfDir1
                   `cast`
                 (Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
-77caf9bb9f829947b28d094f6ddcc060
+ce88adf8bb3663b299911107c121c1ff
   getSysconfDir1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
@@ -535,7 +535,7 @@ eef0e439d39bfa76a2349aa7085e1d88
                    Paths_LambdaNat.getSysconfDir5
                    Paths_LambdaNat.getSysconfDir2
                    eta) -}
-a16452be8ee0378428cfc70d55fa424e
+698ecaec3a796233f3fd804ea055b826
   getSysconfDir2 ::
     GHC.Exception.Type.SomeException
     -> GHC.Prim.State# GHC.Prim.RealWorld
@@ -560,14 +560,14 @@ a16452be8ee0378428cfc70d55fa424e
                         wild
                         eta
                    GHC.Types.True -> (# eta, Paths_LambdaNat.getSysconfDir3 #) } }) -}
-15b520d2c5ac1230b3cb0df915006198
+dacddcaa8383fb42524ea31ba1b60abc
   getSysconfDir3 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    Paths_LambdaNat.getSysconfDir4) -}
-28d7cdc9699e382de312d3bb11cd206a
+c43bf855e2cb222abbab9e56f0297d81
   getSysconfDir4 :: GHC.Prim.Addr#
   {- HasNoCafRefs,
-     Unfolding: ("/home/trentonfaillace/programming-languages-2021/Lab1-Lambda-Calculus/LambdaNat0/.stack-work/install/x86_64-linux-tinfo6/lts-13.12/8.6.4/etc"#) -}
+     Unfolding: ("/home/trentonfaillace/ProgrammingLanguages/Assignment2/LambdaNat2/.stack-work/install/x86_64-linux-tinfo6/lts-13.12/8.6.4/etc"#) -}
 6c52ab0071f5f04f3393412f932c1834
   getSysconfDir5 ::
     GHC.Prim.State# GHC.Prim.RealWorld

@@ -29,12 +29,12 @@ version :: Version
 version = Version [0,1,0,0] []
 bindir, libdir, dynlibdir, datadir, libexecdir, sysconfdir :: FilePath
 
-bindir     = "/home/trentonfaillace/programming-languages-2021/Lab1-Lambda-Calculus/LambdaNat0/.stack-work/install/x86_64-linux-tinfo6/lts-13.12/8.6.4/bin"
-libdir     = "/home/trentonfaillace/programming-languages-2021/Lab1-Lambda-Calculus/LambdaNat0/.stack-work/install/x86_64-linux-tinfo6/lts-13.12/8.6.4/lib/x86_64-linux-ghc-8.6.4/LambdaNat-0.1.0.0-4B7roTwwXlI2zWJKCli09t"
-dynlibdir  = "/home/trentonfaillace/programming-languages-2021/Lab1-Lambda-Calculus/LambdaNat0/.stack-work/install/x86_64-linux-tinfo6/lts-13.12/8.6.4/lib/x86_64-linux-ghc-8.6.4"
-datadir    = "/home/trentonfaillace/programming-languages-2021/Lab1-Lambda-Calculus/LambdaNat0/.stack-work/install/x86_64-linux-tinfo6/lts-13.12/8.6.4/share/x86_64-linux-ghc-8.6.4/LambdaNat-0.1.0.0"
-libexecdir = "/home/trentonfaillace/programming-languages-2021/Lab1-Lambda-Calculus/LambdaNat0/.stack-work/install/x86_64-linux-tinfo6/lts-13.12/8.6.4/libexec/x86_64-linux-ghc-8.6.4/LambdaNat-0.1.0.0"
-sysconfdir = "/home/trentonfaillace/programming-languages-2021/Lab1-Lambda-Calculus/LambdaNat0/.stack-work/install/x86_64-linux-tinfo6/lts-13.12/8.6.4/etc"
+bindir     = "/home/trentonfaillace/ProgrammingLanguages/Assignment2/LambdaNat2/.stack-work/install/x86_64-linux-tinfo6/lts-13.12/8.6.4/bin"
+libdir     = "/home/trentonfaillace/ProgrammingLanguages/Assignment2/LambdaNat2/.stack-work/install/x86_64-linux-tinfo6/lts-13.12/8.6.4/lib/x86_64-linux-ghc-8.6.4/LambdaNat-0.1.0.0-4B7roTwwXlI2zWJKCli09t"
+dynlibdir  = "/home/trentonfaillace/ProgrammingLanguages/Assignment2/LambdaNat2/.stack-work/install/x86_64-linux-tinfo6/lts-13.12/8.6.4/lib/x86_64-linux-ghc-8.6.4"
+datadir    = "/home/trentonfaillace/ProgrammingLanguages/Assignment2/LambdaNat2/.stack-work/install/x86_64-linux-tinfo6/lts-13.12/8.6.4/share/x86_64-linux-ghc-8.6.4/LambdaNat-0.1.0.0"
+libexecdir = "/home/trentonfaillace/ProgrammingLanguages/Assignment2/LambdaNat2/.stack-work/install/x86_64-linux-tinfo6/lts-13.12/8.6.4/libexec/x86_64-linux-ghc-8.6.4/LambdaNat-0.1.0.0"
+sysconfdir = "/home/trentonfaillace/ProgrammingLanguages/Assignment2/LambdaNat2/.stack-work/install/x86_64-linux-tinfo6/lts-13.12/8.6.4/etc"
 
 getBinDir, getLibDir, getDynLibDir, getDataDir, getLibexecDir, getSysconfDir :: IO FilePath
 getBinDir = catchIO (getEnv "LambdaNat_bindir") (\_ -> return bindir)

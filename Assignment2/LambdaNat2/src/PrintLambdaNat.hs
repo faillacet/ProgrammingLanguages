@@ -91,9 +91,14 @@ instance Print Program where
 instance Print Exp where
   prt i e = case e of
     EAbs id exp -> prPrec i 1 (concatD [doc (showString "\\"), prt 0 id, doc (showString "."), prt 0 exp])
-    EApp exp1 exp2 -> prPrec i 2 (concatD [prt 2 exp1, prt 3 exp2])
-    ENat0 -> prPrec i 3 (concatD [doc (showString "0")])
-    ENatS exp -> prPrec i 3 (concatD [doc (showString "S"), prt 3 exp])
-    EVar id -> prPrec i 4 (concatD [prt 0 id])
+    EIf exp1 exp2 exp3 exp4 -> prPrec i 2 (concatD [doc (showString "if"), prt 0 exp1, doc (showString "="), prt 0 exp2, doc (showString "then"), prt 0 exp3, doc (showString "else"), prt 0 exp4])
+    ELet id exp1 exp2 -> prPrec i 2 (concatD [doc (showString "let"), prt 0 id, doc (showString "="), prt 0 exp1, doc (showString "in"), prt 0 exp2])
+    ERec id exp1 exp2 -> prPrec i 2 (concatD [doc (showString "let rec"), prt 0 id, doc (showString "="), prt 0 exp1, doc (showString "in"), prt 0 exp2])
+    EMinusOne exp -> prPrec i 2 (concatD [doc (showString "minus_one"), prt 0 exp])
+    EApp exp1 exp2 -> prPrec i 3 (concatD [prt 3 exp1, prt 4 exp2])
+    ENat0 -> prPrec i 4 (concatD [doc (showString "0")])
+    ENatS exp -> prPrec i 4 (concatD [doc (showString "S"), prt 4 exp])
+    EVar id -> prPrec i 5 (concatD [prt 0 id])
+    EFix exp -> prPrec i 2 (concatD [doc (showString "fix"), prt 0 exp])
 
 

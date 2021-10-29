@@ -14,4 +14,15 @@
 // (\x.\y.x) (a b c) //echo "(\x.\y.x) (a b c)" | stack exec LambdaNat-exe
 // (\x.\y.y) (a b c) //echo "(\x.\y.y) (a b c)" | stack exec LambdaNat-exe
 
+// let f = \x . minus_one x in f (S (S (S 0)))
+
+// let rec f = \x . f (minus_one x) in f (S (S (S 0)))
+
+let x = (S 0) in minus_one x
+
+let f = \x. minus_one x in f (S 0)
+
+let rec f = \ x . f (minus_one x) in f (S S 0)
+
+
 // make up your own

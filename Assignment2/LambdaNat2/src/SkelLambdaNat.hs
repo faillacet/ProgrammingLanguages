@@ -18,8 +18,13 @@ transProgram x = case x of
 transExp :: Exp -> Result
 transExp x = case x of
   EAbs id exp -> failure x
+  EIf exp1 exp2 exp3 exp4 -> failure x
+  ELet id exp1 exp2 -> failure x
+  ERec id exp1 exp2 -> failure x
+  EMinusOne exp -> failure x
   EApp exp1 exp2 -> failure x
   ENat0 -> failure x
   ENatS exp -> failure x
   EVar id -> failure x
+  EFix exp -> failure x
 

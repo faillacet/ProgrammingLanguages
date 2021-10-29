@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2021-10-22 20:30:20.9802942 UTC
+2021-10-26 18:52:58.7104404 UTC
 
 interface LambdaNat-0.1.0.0-4B7roTwwXlI2zWJKCli09t:AbsLambdaNat 8064
-  interface hash: cf1b389f7e667181170308fad3748faf
-  ABI hash: ff941b7054d9bca0d89db41ecbbc59ad
-  export-list hash: 13a53b995c87d83c9d53a2f698bb1ff4
+  interface hash: ad11cc8b3f2b8725e03c7e15a43846e3
+  ABI hash: 850e83c55689f178ba33eddcb68f5912
+  export-list hash: 6bc0e0a30e9a146968fbe55468d9d934
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: b6427d8aeb77a442ff3ccc1f154c876f
   opt_hash: 6faf2de08de32d19db9870899d88e59a
@@ -15,7 +15,7 @@ interface LambdaNat-0.1.0.0-4B7roTwwXlI2zWJKCli09t:AbsLambdaNat 8064
   used TH splices: False
   where
 exports:
-  AbsLambdaNat.Exp{AbsLambdaNat.EAbs AbsLambdaNat.EApp AbsLambdaNat.ENat0 AbsLambdaNat.ENatS AbsLambdaNat.EVar}
+  AbsLambdaNat.Exp{AbsLambdaNat.EAbs AbsLambdaNat.EApp AbsLambdaNat.EFix AbsLambdaNat.EIf AbsLambdaNat.ELet AbsLambdaNat.EMinusOne AbsLambdaNat.ENat0 AbsLambdaNat.ENatS AbsLambdaNat.ERec AbsLambdaNat.EVar}
   AbsLambdaNat.Id{AbsLambdaNat.Id}
   AbsLambdaNat.Program{AbsLambdaNat.Prog}
 module dependencies:
@@ -35,7 +35,7 @@ import  -/  base-4.12.0.0:Text.ParserCombinators.ReadPrec 9773f55573a0fca144b696
 import  -/  base-4.12.0.0:Text.Read.Lex cc2610206b1ce0c49789637e16412aa1
 import  -/  ghc-prim-0.5.3:GHC.Classes 0f6fd7d7db53fc48f6e1f01803cc6c9d
 import  -/  ghc-prim-0.5.3:GHC.Types 57064c9f957b09bc2e360061ad5cae0b
-e7b27efe3c701f752a31f7fb07aa2b2c
+8eb20d3e9acb19c62833988e9a486041
   $fEqExp :: GHC.Classes.Eq AbsLambdaNat.Exp
   DFunId
   {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
@@ -43,7 +43,7 @@ e7b27efe3c701f752a31f7fb07aa2b2c
                   @ AbsLambdaNat.Exp
                   AbsLambdaNat.$fEqExp_$c==
                   AbsLambdaNat.$fEqExp_$c/= -}
-e7b27efe3c701f752a31f7fb07aa2b2c
+8eb20d3e9acb19c62833988e9a486041
   $fEqExp_$c/= ::
     AbsLambdaNat.Exp -> AbsLambdaNat.Exp -> GHC.Types.Bool
   {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
@@ -53,7 +53,7 @@ e7b27efe3c701f752a31f7fb07aa2b2c
                  case AbsLambdaNat.$fEqExp_$c== x y of wild {
                    GHC.Types.False -> GHC.Types.True
                    GHC.Types.True -> GHC.Types.False }) -}
-e7b27efe3c701f752a31f7fb07aa2b2c
+8eb20d3e9acb19c62833988e9a486041
   $fEqExp_$c== ::
     AbsLambdaNat.Exp -> AbsLambdaNat.Exp -> GHC.Types.Bool
   {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U> -}
@@ -73,7 +73,7 @@ e7b27efe3c701f752a31f7fb07aa2b2c
                   (Sym (AbsLambdaNat.N:Id[0])
                    ->_R Sym (AbsLambdaNat.N:Id[0])
                    ->_R <GHC.Types.Bool>_R) -}
-612ace0cd2b0c3ec3c156d825bdbf019
+58c1d94edb2bdcb2b27626f4e1373a5d
   $fEqProgram :: GHC.Classes.Eq AbsLambdaNat.Program
   DFunId
   {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
@@ -81,7 +81,7 @@ e7b27efe3c701f752a31f7fb07aa2b2c
                   @ AbsLambdaNat.Program
                   AbsLambdaNat.$fEqProgram_$c==
                   AbsLambdaNat.$fEqProgram_$c/= -}
-612ace0cd2b0c3ec3c156d825bdbf019
+58c1d94edb2bdcb2b27626f4e1373a5d
   $fEqProgram_$c/= ::
     AbsLambdaNat.Program -> AbsLambdaNat.Program -> GHC.Types.Bool
   {- Arity: 2, HasNoCafRefs,
@@ -93,7 +93,7 @@ e7b27efe3c701f752a31f7fb07aa2b2c
                  case AbsLambdaNat.$fEqExp_$c== a1 b1 of wild2 {
                    GHC.Types.False -> GHC.Types.True
                    GHC.Types.True -> GHC.Types.False } } }) -}
-612ace0cd2b0c3ec3c156d825bdbf019
+58c1d94edb2bdcb2b27626f4e1373a5d
   $fEqProgram_$c== ::
     AbsLambdaNat.Program -> AbsLambdaNat.Program -> GHC.Types.Bool
   {- Arity: 2, HasNoCafRefs,
@@ -103,7 +103,7 @@ e7b27efe3c701f752a31f7fb07aa2b2c
                  case ds of wild { AbsLambdaNat.Prog a1 ->
                  case ds1 of wild1 { AbsLambdaNat.Prog b1 ->
                  AbsLambdaNat.$fEqExp_$c== a1 b1 } }) -}
-e7b27efe3c701f752a31f7fb07aa2b2c
+8eb20d3e9acb19c62833988e9a486041
   $fOrdExp :: GHC.Classes.Ord AbsLambdaNat.Exp
   DFunId
   {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
@@ -117,43 +117,43 @@ e7b27efe3c701f752a31f7fb07aa2b2c
                   AbsLambdaNat.$fOrdExp_$c>=
                   AbsLambdaNat.$fOrdExp_$cmax
                   AbsLambdaNat.$fOrdExp_$cmin -}
-e7b27efe3c701f752a31f7fb07aa2b2c
+8eb20d3e9acb19c62833988e9a486041
   $fOrdExp_$c< ::
     AbsLambdaNat.Exp -> AbsLambdaNat.Exp -> GHC.Types.Bool
-  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,U>,
      Unfolding: InlineRule (2, True, False)
                 (\ (x :: AbsLambdaNat.Exp) (y :: AbsLambdaNat.Exp) ->
                  case AbsLambdaNat.$fOrdExp_$ccompare x y of wild {
                    DEFAULT -> GHC.Types.False GHC.Types.LT -> GHC.Types.True }) -}
-e7b27efe3c701f752a31f7fb07aa2b2c
+8eb20d3e9acb19c62833988e9a486041
   $fOrdExp_$c<= ::
     AbsLambdaNat.Exp -> AbsLambdaNat.Exp -> GHC.Types.Bool
-  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,U>,
      Unfolding: InlineRule (2, True, False)
                 (\ (x :: AbsLambdaNat.Exp) (y :: AbsLambdaNat.Exp) ->
                  case AbsLambdaNat.$fOrdExp_$ccompare x y of wild {
                    DEFAULT -> GHC.Types.True GHC.Types.GT -> GHC.Types.False }) -}
-e7b27efe3c701f752a31f7fb07aa2b2c
+8eb20d3e9acb19c62833988e9a486041
   $fOrdExp_$c> ::
     AbsLambdaNat.Exp -> AbsLambdaNat.Exp -> GHC.Types.Bool
-  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,U>,
      Unfolding: InlineRule (2, True, False)
                 (\ (x :: AbsLambdaNat.Exp) (y :: AbsLambdaNat.Exp) ->
                  case AbsLambdaNat.$fOrdExp_$ccompare x y of wild {
                    DEFAULT -> GHC.Types.False GHC.Types.GT -> GHC.Types.True }) -}
-e7b27efe3c701f752a31f7fb07aa2b2c
+8eb20d3e9acb19c62833988e9a486041
   $fOrdExp_$c>= ::
     AbsLambdaNat.Exp -> AbsLambdaNat.Exp -> GHC.Types.Bool
-  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,U>,
      Unfolding: InlineRule (2, True, False)
                 (\ (x :: AbsLambdaNat.Exp) (y :: AbsLambdaNat.Exp) ->
                  case AbsLambdaNat.$fOrdExp_$ccompare x y of wild {
                    DEFAULT -> GHC.Types.True GHC.Types.LT -> GHC.Types.False }) -}
-e7b27efe3c701f752a31f7fb07aa2b2c
+8eb20d3e9acb19c62833988e9a486041
   $fOrdExp_$ccompare ::
     AbsLambdaNat.Exp -> AbsLambdaNat.Exp -> GHC.Types.Ordering
-  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U> -}
-e7b27efe3c701f752a31f7fb07aa2b2c
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,U> -}
+8eb20d3e9acb19c62833988e9a486041
   $fOrdExp_$cmax ::
     AbsLambdaNat.Exp -> AbsLambdaNat.Exp -> AbsLambdaNat.Exp
   {- Arity: 2, HasNoCafRefs, Strictness: <S,U><S,U>,
@@ -161,7 +161,7 @@ e7b27efe3c701f752a31f7fb07aa2b2c
                 (\ (x :: AbsLambdaNat.Exp) (y :: AbsLambdaNat.Exp) ->
                  case AbsLambdaNat.$fOrdExp_$ccompare x y of wild {
                    DEFAULT -> y GHC.Types.GT -> x }) -}
-e7b27efe3c701f752a31f7fb07aa2b2c
+8eb20d3e9acb19c62833988e9a486041
   $fOrdExp_$cmin ::
     AbsLambdaNat.Exp -> AbsLambdaNat.Exp -> AbsLambdaNat.Exp
   {- Arity: 2, HasNoCafRefs, Strictness: <S,U><S,U>,
@@ -211,7 +211,7 @@ e7b27efe3c701f752a31f7fb07aa2b2c
                   (Sym (AbsLambdaNat.N:Id[0])
                    ->_R Sym (AbsLambdaNat.N:Id[0])
                    ->_R Sym (AbsLambdaNat.N:Id[0])) -}
-612ace0cd2b0c3ec3c156d825bdbf019
+58c1d94edb2bdcb2b27626f4e1373a5d
   $fOrdProgram :: GHC.Classes.Ord AbsLambdaNat.Program
   DFunId
   {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
@@ -225,57 +225,57 @@ e7b27efe3c701f752a31f7fb07aa2b2c
                   AbsLambdaNat.$fOrdProgram_$c>=
                   AbsLambdaNat.$fOrdProgram_$cmax
                   AbsLambdaNat.$fOrdProgram_$cmin -}
-612ace0cd2b0c3ec3c156d825bdbf019
+58c1d94edb2bdcb2b27626f4e1373a5d
   $fOrdProgram_$c< ::
     AbsLambdaNat.Program -> AbsLambdaNat.Program -> GHC.Types.Bool
   {- Arity: 2, HasNoCafRefs,
-     Strictness: <S(S),1*U(1*U)><S(S),1*U(1*U)>,
+     Strictness: <S(S),1*U(1*U)><S(S),1*U(U)>,
      Unfolding: InlineRule (2, True, False)
                 (\ (a :: AbsLambdaNat.Program) (b :: AbsLambdaNat.Program) ->
                  case a of wild { AbsLambdaNat.Prog a1 ->
                  case b of wild1 { AbsLambdaNat.Prog b1 ->
                  AbsLambdaNat.$fOrdExp_$c< a1 b1 } }) -}
-612ace0cd2b0c3ec3c156d825bdbf019
+58c1d94edb2bdcb2b27626f4e1373a5d
   $fOrdProgram_$c<= ::
     AbsLambdaNat.Program -> AbsLambdaNat.Program -> GHC.Types.Bool
   {- Arity: 2, HasNoCafRefs,
-     Strictness: <S(S),1*U(1*U)><S(S),1*U(1*U)>,
+     Strictness: <S(S),1*U(U)><S(S),1*U(1*U)>,
      Unfolding: InlineRule (2, True, False)
                 (\ (a :: AbsLambdaNat.Program) (b :: AbsLambdaNat.Program) ->
                  case b of wild { AbsLambdaNat.Prog a1 ->
                  case a of wild1 { AbsLambdaNat.Prog b1 ->
                  case AbsLambdaNat.$fOrdExp_$ccompare a1 b1 of wild2 {
                    DEFAULT -> GHC.Types.True GHC.Types.LT -> GHC.Types.False } } }) -}
-612ace0cd2b0c3ec3c156d825bdbf019
+58c1d94edb2bdcb2b27626f4e1373a5d
   $fOrdProgram_$c> ::
     AbsLambdaNat.Program -> AbsLambdaNat.Program -> GHC.Types.Bool
   {- Arity: 2, HasNoCafRefs,
-     Strictness: <S(S),1*U(1*U)><S(S),1*U(1*U)>,
+     Strictness: <S(S),1*U(U)><S(S),1*U(1*U)>,
      Unfolding: InlineRule (2, True, True)
                 (\ (a :: AbsLambdaNat.Program) (b :: AbsLambdaNat.Program) ->
                  AbsLambdaNat.$fOrdProgram_$c< b a) -}
-612ace0cd2b0c3ec3c156d825bdbf019
+58c1d94edb2bdcb2b27626f4e1373a5d
   $fOrdProgram_$c>= ::
     AbsLambdaNat.Program -> AbsLambdaNat.Program -> GHC.Types.Bool
   {- Arity: 2, HasNoCafRefs,
-     Strictness: <S(S),1*U(1*U)><S(S),1*U(1*U)>,
+     Strictness: <S(S),1*U(1*U)><S(S),1*U(U)>,
      Unfolding: InlineRule (2, True, False)
                 (\ (a :: AbsLambdaNat.Program) (b :: AbsLambdaNat.Program) ->
                  case a of wild { AbsLambdaNat.Prog a1 ->
                  case b of wild1 { AbsLambdaNat.Prog b1 ->
                  case AbsLambdaNat.$fOrdExp_$ccompare a1 b1 of wild2 {
                    DEFAULT -> GHC.Types.True GHC.Types.LT -> GHC.Types.False } } }) -}
-612ace0cd2b0c3ec3c156d825bdbf019
+58c1d94edb2bdcb2b27626f4e1373a5d
   $fOrdProgram_$ccompare ::
     AbsLambdaNat.Program -> AbsLambdaNat.Program -> GHC.Types.Ordering
   {- Arity: 2, HasNoCafRefs,
-     Strictness: <S(S),1*U(1*U)><S(S),1*U(1*U)>,
+     Strictness: <S(S),1*U(1*U)><S(S),1*U(U)>,
      Unfolding: InlineRule (2, True, False)
                 (\ (a :: AbsLambdaNat.Program) (b :: AbsLambdaNat.Program) ->
                  case a of wild { AbsLambdaNat.Prog a1 ->
                  case b of wild1 { AbsLambdaNat.Prog b1 ->
                  AbsLambdaNat.$fOrdExp_$ccompare a1 b1 } }) -}
-612ace0cd2b0c3ec3c156d825bdbf019
+58c1d94edb2bdcb2b27626f4e1373a5d
   $fOrdProgram_$cmax ::
     AbsLambdaNat.Program
     -> AbsLambdaNat.Program -> AbsLambdaNat.Program
@@ -286,7 +286,7 @@ e7b27efe3c701f752a31f7fb07aa2b2c
                  case x of wild1 { AbsLambdaNat.Prog b1 ->
                  case AbsLambdaNat.$fOrdExp_$ccompare a1 b1 of wild2 {
                    DEFAULT -> wild GHC.Types.LT -> wild1 } } }) -}
-612ace0cd2b0c3ec3c156d825bdbf019
+58c1d94edb2bdcb2b27626f4e1373a5d
   $fOrdProgram_$cmin ::
     AbsLambdaNat.Program
     -> AbsLambdaNat.Program -> AbsLambdaNat.Program
@@ -297,7 +297,7 @@ e7b27efe3c701f752a31f7fb07aa2b2c
                  case x of wild1 { AbsLambdaNat.Prog b1 ->
                  case AbsLambdaNat.$fOrdExp_$ccompare a1 b1 of wild2 {
                    DEFAULT -> wild1 GHC.Types.LT -> wild } } }) -}
-e7b27efe3c701f752a31f7fb07aa2b2c
+8eb20d3e9acb19c62833988e9a486041
   $fReadExp :: GHC.Read.Read AbsLambdaNat.Exp
   DFunId
   {- Strictness: m, Inline: CONLIKE,
@@ -312,14 +312,14 @@ e7b27efe3c701f752a31f7fb07aa2b2c
                                   <AbsLambdaNat.Exp>_R)) ; Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
                                                                     <AbsLambdaNat.Exp>_R))
                   AbsLambdaNat.$fReadExp_$creadListPrec -}
-e7b27efe3c701f752a31f7fb07aa2b2c
+8eb20d3e9acb19c62833988e9a486041
   $fReadExp1 ::
     Text.ParserCombinators.ReadPrec.Prec
     -> forall b.
        (AbsLambdaNat.Exp -> Text.ParserCombinators.ReadP.P b)
        -> Text.ParserCombinators.ReadP.P b
   {- Arity: 2 -}
-e7b27efe3c701f752a31f7fb07aa2b2c
+8eb20d3e9acb19c62833988e9a486041
   $fReadExp2 :: Text.ParserCombinators.ReadP.P [AbsLambdaNat.Exp]
   {- Unfolding: ((AbsLambdaNat.$fReadExp_$creadListPrec
                     `cast`
@@ -331,14 +331,14 @@ e7b27efe3c701f752a31f7fb07aa2b2c
                    @ [AbsLambdaNat.Exp]
                    (Text.ParserCombinators.ReadP.$fApplicativeP_$cpure
                       @ [AbsLambdaNat.Exp])) -}
-e7b27efe3c701f752a31f7fb07aa2b2c
+8eb20d3e9acb19c62833988e9a486041
   $fReadExp_$creadList ::
     Text.ParserCombinators.ReadP.ReadS [AbsLambdaNat.Exp]
   {- Arity: 1,
      Unfolding: (Text.ParserCombinators.ReadP.run
                    @ [AbsLambdaNat.Exp]
                    AbsLambdaNat.$fReadExp2) -}
-e7b27efe3c701f752a31f7fb07aa2b2c
+8eb20d3e9acb19c62833988e9a486041
   $fReadExp_$creadListPrec ::
     Text.ParserCombinators.ReadPrec.ReadPrec [AbsLambdaNat.Exp]
   {- Unfolding: (GHC.Read.list
@@ -349,7 +349,7 @@ e7b27efe3c701f752a31f7fb07aa2b2c
                      ->_R Sym (Text.ParserCombinators.ReadP.N:ReadP[0]
                                    <AbsLambdaNat.Exp>_R)) ; Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
                                                                      <AbsLambdaNat.Exp>_R))) -}
-e7b27efe3c701f752a31f7fb07aa2b2c
+8eb20d3e9acb19c62833988e9a486041
   $fReadExp_$creadsPrec ::
     GHC.Types.Int
     -> Text.ParserCombinators.ReadP.ReadS AbsLambdaNat.Exp
@@ -466,7 +466,7 @@ a5e39b031b88bd0cd31e43a363dff447
                       @ AbsLambdaNat.Id
                       (Text.ParserCombinators.ReadP.$fApplicativeP_$cpure
                          @ AbsLambdaNat.Id))) -}
-612ace0cd2b0c3ec3c156d825bdbf019
+58c1d94edb2bdcb2b27626f4e1373a5d
   $fReadProgram :: GHC.Read.Read AbsLambdaNat.Program
   DFunId
   {- Strictness: m, Inline: CONLIKE,
@@ -481,7 +481,7 @@ a5e39b031b88bd0cd31e43a363dff447
                                   <AbsLambdaNat.Program>_R)) ; Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
                                                                         <AbsLambdaNat.Program>_R))
                   AbsLambdaNat.$fReadProgram_$creadListPrec -}
-612ace0cd2b0c3ec3c156d825bdbf019
+58c1d94edb2bdcb2b27626f4e1373a5d
   $fReadProgram1 ::
     Text.ParserCombinators.ReadPrec.Prec
     -> forall b.
@@ -496,7 +496,7 @@ a5e39b031b88bd0cd31e43a363dff447
                      ->_R Sym (Text.ParserCombinators.ReadP.N:ReadP[0]
                                    <AbsLambdaNat.Program>_R)) ; Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
                                                                          <AbsLambdaNat.Program>_R))) -}
-612ace0cd2b0c3ec3c156d825bdbf019
+58c1d94edb2bdcb2b27626f4e1373a5d
   $fReadProgram2 ::
     Text.ParserCombinators.ReadPrec.Prec
     -> forall b.
@@ -516,7 +516,7 @@ a2a6e54d859359ae641b6459ed4930e8
 f70a5ee51a19d6b4f6dbde35fa328a77
   $fReadProgram4 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("Prog"#) -}
-612ace0cd2b0c3ec3c156d825bdbf019
+58c1d94edb2bdcb2b27626f4e1373a5d
   $fReadProgram5 ::
     Text.ParserCombinators.ReadP.P [AbsLambdaNat.Program]
   {- Unfolding: ((AbsLambdaNat.$fReadProgram_$creadListPrec
@@ -530,14 +530,14 @@ f70a5ee51a19d6b4f6dbde35fa328a77
                    @ [AbsLambdaNat.Program]
                    (Text.ParserCombinators.ReadP.$fApplicativeP_$cpure
                       @ [AbsLambdaNat.Program])) -}
-612ace0cd2b0c3ec3c156d825bdbf019
+58c1d94edb2bdcb2b27626f4e1373a5d
   $fReadProgram_$creadList ::
     Text.ParserCombinators.ReadP.ReadS [AbsLambdaNat.Program]
   {- Arity: 1,
      Unfolding: (Text.ParserCombinators.ReadP.run
                    @ [AbsLambdaNat.Program]
                    AbsLambdaNat.$fReadProgram5) -}
-612ace0cd2b0c3ec3c156d825bdbf019
+58c1d94edb2bdcb2b27626f4e1373a5d
   $fReadProgram_$creadListPrec ::
     Text.ParserCombinators.ReadPrec.ReadPrec [AbsLambdaNat.Program]
   {- Unfolding: (GHC.Read.list
@@ -548,7 +548,7 @@ f70a5ee51a19d6b4f6dbde35fa328a77
                      ->_R Sym (Text.ParserCombinators.ReadP.N:ReadP[0]
                                    <AbsLambdaNat.Program>_R)) ; Sym (Text.ParserCombinators.ReadPrec.N:ReadPrec[0]
                                                                          <AbsLambdaNat.Program>_R))) -}
-612ace0cd2b0c3ec3c156d825bdbf019
+58c1d94edb2bdcb2b27626f4e1373a5d
   $fReadProgram_$creadsPrec ::
     GHC.Types.Int
     -> Text.ParserCombinators.ReadP.ReadS AbsLambdaNat.Program
@@ -569,7 +569,7 @@ f70a5ee51a19d6b4f6dbde35fa328a77
                       @ AbsLambdaNat.Program
                       (Text.ParserCombinators.ReadP.$fApplicativeP_$cpure
                          @ AbsLambdaNat.Program))) -}
-e7b27efe3c701f752a31f7fb07aa2b2c
+8eb20d3e9acb19c62833988e9a486041
   $fShowExp :: GHC.Show.Show AbsLambdaNat.Exp
   DFunId
   {- Strictness: m, Inline: CONLIKE,
@@ -578,7 +578,7 @@ e7b27efe3c701f752a31f7fb07aa2b2c
                   AbsLambdaNat.$fShowExp_$cshowsPrec
                   AbsLambdaNat.$fShowExp_$cshow
                   AbsLambdaNat.$fShowExp_$cshowList -}
-e7b27efe3c701f752a31f7fb07aa2b2c
+8eb20d3e9acb19c62833988e9a486041
   $fShowExp1 :: AbsLambdaNat.Exp -> GHC.Show.ShowS
   {- Arity: 2,
      Unfolding: (AbsLambdaNat.$fShowExp_$cshowsPrec
@@ -586,7 +586,7 @@ e7b27efe3c701f752a31f7fb07aa2b2c
 7c6dbcfd61885ca1e4cf663fddf62b71
   $fShowExp2 :: GHC.Types.Int
   {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
-e7b27efe3c701f752a31f7fb07aa2b2c
+8eb20d3e9acb19c62833988e9a486041
   $fShowExp_$cshow :: AbsLambdaNat.Exp -> GHC.Base.String
   {- Arity: 1, Strictness: <S,1*U>,
      Unfolding: InlineRule (1, True, False)
@@ -595,7 +595,7 @@ e7b27efe3c701f752a31f7fb07aa2b2c
                    AbsLambdaNat.$fShowExp2
                    x
                    (GHC.Types.[] @ GHC.Types.Char)) -}
-e7b27efe3c701f752a31f7fb07aa2b2c
+8eb20d3e9acb19c62833988e9a486041
   $fShowExp_$cshowList :: [AbsLambdaNat.Exp] -> GHC.Show.ShowS
   {- Arity: 2, Strictness: <S,1*U><L,U>,
      Unfolding: InlineRule (2, True, False)
@@ -605,7 +605,7 @@ e7b27efe3c701f752a31f7fb07aa2b2c
                    AbsLambdaNat.$fShowExp1
                    ls
                    s) -}
-e7b27efe3c701f752a31f7fb07aa2b2c
+8eb20d3e9acb19c62833988e9a486041
   $fShowExp_$cshowsPrec ::
     GHC.Types.Int -> AbsLambdaNat.Exp -> GHC.Show.ShowS
   {- Arity: 3, Strictness: <L,1*U(U)><S,1*U><L,U> -}
@@ -665,7 +665,7 @@ e7b27efe3c701f752a31f7fb07aa2b2c
                    (w2 :: GHC.Base.String) ->
                  case w of ww { GHC.Types.I# ww1 ->
                  AbsLambdaNat.$w$cshowsPrec ww1 w1 w2 }) -}
-612ace0cd2b0c3ec3c156d825bdbf019
+58c1d94edb2bdcb2b27626f4e1373a5d
   $fShowProgram :: GHC.Show.Show AbsLambdaNat.Program
   DFunId
   {- Strictness: m, Inline: CONLIKE,
@@ -674,7 +674,7 @@ e7b27efe3c701f752a31f7fb07aa2b2c
                   AbsLambdaNat.$fShowProgram_$cshowsPrec
                   AbsLambdaNat.$fShowProgram_$cshow
                   AbsLambdaNat.$fShowProgram_$cshowList -}
-612ace0cd2b0c3ec3c156d825bdbf019
+58c1d94edb2bdcb2b27626f4e1373a5d
   $fShowProgram1 :: AbsLambdaNat.Program -> GHC.Show.ShowS
   {- Arity: 2, Strictness: <S,1*U(1*U)><L,U>,
      Unfolding: (\ (w :: AbsLambdaNat.Program)
@@ -688,7 +688,7 @@ e7b27efe3c701f752a31f7fb07aa2b2c
 88003127d099a139b7abb3b07eb33377
   $fShowProgram3 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("Prog "#) -}
-612ace0cd2b0c3ec3c156d825bdbf019
+58c1d94edb2bdcb2b27626f4e1373a5d
   $fShowProgram_$cshow :: AbsLambdaNat.Program -> GHC.Base.String
   {- Arity: 1, Strictness: <S,1*U(1*U)>,
      Unfolding: InlineRule (1, True, False)
@@ -709,7 +709,7 @@ e7b27efe3c701f752a31f7fb07aa2b2c
                       AbsLambdaNat.$fReadId5
                       b1
                       (GHC.Types.[] @ GHC.Types.Char)) }) -}
-612ace0cd2b0c3ec3c156d825bdbf019
+58c1d94edb2bdcb2b27626f4e1373a5d
   $fShowProgram_$cshowList ::
     [AbsLambdaNat.Program] -> GHC.Show.ShowS
   {- Arity: 2, Strictness: <S,1*U><L,U>,
@@ -720,7 +720,7 @@ e7b27efe3c701f752a31f7fb07aa2b2c
                    AbsLambdaNat.$fShowProgram1
                    ls
                    s) -}
-612ace0cd2b0c3ec3c156d825bdbf019
+58c1d94edb2bdcb2b27626f4e1373a5d
   $fShowProgram_$cshowsPrec ::
     GHC.Types.Int -> AbsLambdaNat.Program -> GHC.Show.ShowS
   {- Arity: 3, Strictness: <S(S),1*U(U)><S,1*U(1*U)><L,U>,
@@ -772,6 +772,83 @@ cbe73008538405142b8fcbd2692a79ce
 9fc6dd866c3ab4914823bba71b0ec57b
   $tc'EApp3 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("'EApp"#) -}
+dc61cff1b541ca5692762988afb1bf24
+  $tc'EFix :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15501242204026029513##
+                   422041783514896886##
+                   AbsLambdaNat.$trModule
+                   AbsLambdaNat.$tc'EFix2
+                   0#
+                   AbsLambdaNat.$tc'EFix1) -}
+bf445a63b0d0fb7c45efd44c4fc5226a
+  $tc'EFix1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+f304ec04989cdf3fddccb3b3e02be154
+  $tc'EFix2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS AbsLambdaNat.$tc'EFix3) -}
+69290131ba9d0539f7a1bc46a7691c2d
+  $tc'EFix3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'EFix"#) -}
+5b5129a7a549d12c1091ed54bd8524c0
+  $tc'EIf :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4586467809123410676##
+                   16926155682000036801##
+                   AbsLambdaNat.$trModule
+                   AbsLambdaNat.$tc'EIf2
+                   0#
+                   AbsLambdaNat.$tc'EIf1) -}
+fd0cdd04388b9da9f7b10c5d2dbc9da8
+  $tc'EIf1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+1f6ee75a8732157597254e734a732cee
+  $tc'EIf2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS AbsLambdaNat.$tc'EIf3) -}
+c7da048387035eeb153a6e9ae9f4264f
+  $tc'EIf3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'EIf"#) -}
+ee2d080ad1e1f552a9a276d3ac6583e5
+  $tc'ELet :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15070609095420232434##
+                   14987930771355422455##
+                   AbsLambdaNat.$trModule
+                   AbsLambdaNat.$tc'ELet2
+                   0#
+                   AbsLambdaNat.$tc'ELet1) -}
+ecb14c7b486522a9a4fe8f99dace1414
+  $tc'ELet1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+3ae9f7f48d363ac4f8e119b3cee6590b
+  $tc'ELet2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS AbsLambdaNat.$tc'ELet3) -}
+dc27d3b6ef47132515e726bab8f25249
+  $tc'ELet3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'ELet"#) -}
+6c7419c37128a7668f49927a6414e621
+  $tc'EMinusOne :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7683068420303693146##
+                   16860014791866567270##
+                   AbsLambdaNat.$trModule
+                   AbsLambdaNat.$tc'EMinusOne1
+                   0#
+                   AbsLambdaNat.$tc'EFix1) -}
+f05a3e79dd90e9a8c9a5c23ab4cf6667
+  $tc'EMinusOne1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS AbsLambdaNat.$tc'EMinusOne2) -}
+3e7af89862a7d7740a9449a5283d23b6
+  $tc'EMinusOne2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'EMinusOne"#) -}
 54feb4a8283ac73806089c34aec7fba8
   $tc'ENat0 :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,
@@ -792,26 +869,40 @@ cd65bcab68f047e178774c56cce26ea4
 92e1f531abd5e1b82ee07bb44578ac59
   $tc'ENat3 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("'ENat0"#) -}
-5ded38c5a947401a1a44b2b57884c4f6
+166e8aa56f11c300b8ae6cefa908b60b
   $tc'ENatS :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,
      Unfolding: (GHC.Types.TyCon
                    6075875651785551761##
                    5329654743597033152##
                    AbsLambdaNat.$trModule
-                   AbsLambdaNat.$tc'ENatS2
+                   AbsLambdaNat.$tc'ENatS1
                    0#
-                   AbsLambdaNat.$tc'ENatS1) -}
-17fa5f303216eb29b75f2a1250f0f57a
-  $tc'ENatS1 :: GHC.Types.KindRep
-  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
-417bfdeb2c59e7104d4d37878f03e0b8
-  $tc'ENatS2 :: GHC.Types.TrName
+                   AbsLambdaNat.$tc'EFix1) -}
+c31ec8e3760c81d5dfbc9b0b2bd709d5
+  $tc'ENatS1 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
-     Unfolding: (GHC.Types.TrNameS AbsLambdaNat.$tc'ENatS3) -}
-81c54da4371c1484a8eb22c3a7231106
-  $tc'ENatS3 :: GHC.Prim.Addr#
+     Unfolding: (GHC.Types.TrNameS AbsLambdaNat.$tc'ENatS2) -}
+295aa7e2dc7f6dfae8071035fc41f84a
+  $tc'ENatS2 :: GHC.Prim.Addr#
   {- HasNoCafRefs, Unfolding: ("'ENatS"#) -}
+7337b0f26e41043b0288b975bf3dce5c
+  $tc'ERec :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16665295591794920901##
+                   17326198020948694178##
+                   AbsLambdaNat.$trModule
+                   AbsLambdaNat.$tc'ERec1
+                   0#
+                   AbsLambdaNat.$tc'ELet1) -}
+e35f63ff5425733532e48bf1e9c0c760
+  $tc'ERec1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS AbsLambdaNat.$tc'ERec2) -}
+3811a4c8163f5cd9d7dc8d93d93625a4
+  $tc'ERec2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'ERec"#) -}
 951173b314e4a0d310476369d874383a
   $tc'EVar :: GHC.Types.TyCon
   {- HasNoCafRefs, Strictness: m,
@@ -989,7 +1080,7 @@ fdd4fb8333b74684139acdc1d68275d5
                         @ b
                         (\ (a :: GHC.Base.String) ->
                          Text.ParserCombinators.ReadP.skipSpaces2 a @ b k) }) -}
-612ace0cd2b0c3ec3c156d825bdbf019
+58c1d94edb2bdcb2b27626f4e1373a5d
   $w$creadPrec1 ::
     GHC.Prim.Int#
     -> forall b.
@@ -1064,7 +1155,7 @@ fdd4fb8333b74684139acdc1d68275d5
                                     @ GHC.Types.Char
                                     GHC.Show.$fShow(,)3
                                     (GHC.Types.: @ GHC.Types.Char GHC.Show.$fShow(,)2 w1))))) }) -}
-2c7406d8255602fed5e79ee90dbbcf78
+02621759cd1ca1ef5900752928d92747
   $w$cshowsPrec1 ::
     GHC.Prim.Int#
     -> AbsLambdaNat.Exp -> GHC.Base.String -> GHC.Base.String
@@ -1089,16 +1180,24 @@ fdd4fb8333b74684139acdc1d68275d5
                               AbsLambdaNat.$fReadId5
                               ww1
                               (GHC.Types.: @ GHC.Types.Char GHC.Show.$fShow(,)2 w))) }) -}
-e7b27efe3c701f752a31f7fb07aa2b2c
+8eb20d3e9acb19c62833988e9a486041
   data Exp
     = EAbs AbsLambdaNat.Id AbsLambdaNat.Exp
+    | EIf AbsLambdaNat.Exp
+          AbsLambdaNat.Exp
+          AbsLambdaNat.Exp
+          AbsLambdaNat.Exp
+    | ELet AbsLambdaNat.Id AbsLambdaNat.Exp AbsLambdaNat.Exp
+    | ERec AbsLambdaNat.Id AbsLambdaNat.Exp AbsLambdaNat.Exp
+    | EMinusOne AbsLambdaNat.Exp
     | EApp AbsLambdaNat.Exp AbsLambdaNat.Exp
     | ENat0
     | ENatS AbsLambdaNat.Exp
     | EVar AbsLambdaNat.Id
+    | EFix AbsLambdaNat.Exp
 37ec743cab0dab77ff6e9884f6f093e6
   newtype Id = Id GHC.Base.String
-612ace0cd2b0c3ec3c156d825bdbf019
+58c1d94edb2bdcb2b27626f4e1373a5d
   data Program = Prog AbsLambdaNat.Exp
 instance [safe] GHC.Classes.Eq [AbsLambdaNat.Exp]
   = AbsLambdaNat.$fEqExp

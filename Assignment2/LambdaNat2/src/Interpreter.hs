@@ -32,6 +32,15 @@ evalCBN (EApp e1 e2) = case (evalCBN e1) of
 evalCBN (ENat0) = ENat0
 evalCBN (ENatS e) = ENatS (evalCBN e)
 
+evalCBN (EMinusOne (ENatS e)) = evalCBN e
+evalCBN (EMinusOne (ENat0)) = ENat0
+
+evalCBN (EIf e1 e2 e3 e4) = if (evalCBN e1) == (evalCBN e2) then (evalCBN e3) else (evalCBN e4)
+
+evalCBN (ELet x e1 e2) = evalCBN (EApp (EAbs x e2) e1)
+
+---------------------------------------------------
+
 evalCBN x = x -- this is a catch all clause, currently only for variables, must be the clause of the eval function
 
 -- fresh generates fresh names for substitutions, can be ignored for now
@@ -62,3 +71,21 @@ subst id s (EAbs id1 e1) =
 ----------------------------------------------------------------
 subst id s (ENat0) = ENat0
 subst id s (ENatS e) = ENatS (subst id s e)
+
+subst id s (EIf e1 e2 e3 e4) = EIf (subst id s e1)
+subst id s (ELet id e1 e2) = (subst id s )
+
+
+
+
+
+
+
+
+
+
+
+
+-- evalCBN (ELet x e1 e2) = evalCBN (EApp (EAbs x e2) e1)
+-- evalCBN (EFix e) = evalCBN (EApp e (EFix e))
+-- evalCBN (ERec x e1 e2) = mevalCBN (EApp (EAbs x e2) (Efix e1))
