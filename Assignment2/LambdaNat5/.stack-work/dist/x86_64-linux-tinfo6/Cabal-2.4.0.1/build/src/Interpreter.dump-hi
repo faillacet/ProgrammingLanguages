@@ -1,0 +1,122 @@
+
+==================== FINAL INTERFACE ====================
+2021-11-02 16:04:48.1232477 UTC
+
+interface LambdaNat-0.1.0.0-4B7roTwwXlI2zWJKCli09t:Interpreter 8064
+  interface hash: 76d41e39c2c1337e82d0f531dd365cb7
+  ABI hash: ac4406e5eac8b5b2712e43e4cb091158
+  export-list hash: 101e3c62302ced1c8f7dbc16da3eca0e
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: b6427d8aeb77a442ff3ccc1f154c876f
+  opt_hash: 6faf2de08de32d19db9870899d88e59a
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Interpreter.evalCBN
+  Interpreter.execCBN
+  Interpreter.fresh
+  Interpreter.fresh_aux
+  Interpreter.subst
+module dependencies: AbsLambdaNat ErrM PrintLambdaNat
+package dependencies: base-4.12.0.0* ghc-prim-0.5.3
+                      integer-gmp-1.0.2.0
+orphans: base-4.12.0.0:GHC.Float base-4.12.0.0:GHC.Base
+family instance modules: base-4.12.0.0:Control.Applicative
+                         base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity base-4.12.0.0:Data.Monoid
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:GHC.Generics
+                         base-4.12.0.0:GHC.IO.Exception
+import  -/  AbsLambdaNat 9df55100b69ab990e20c11e484019614
+  exports: db14f1a3d6589ee68e644a6dc31cda8e
+  EAbs 103ccb5f79ee8faffecdc7d0e9411a60
+  EApp 866b3d12c30e557b97d91ab602fdb2cb
+  ECons 508c067dc963ac0e5d17f5741abb3ed0
+  EFix 48cfb9f74d931a3133e075d2fc27ecca
+  EHd 9cb7842aeb102a215277c82af387ce1d
+  EIf d4ea161237c1abb021807db980055ccd
+  EInt fd14b8c08867b4fdad0d5f467fda15c7
+  ELet 1e24a1bf09cfea869140ad9830b09a96
+  EMinus 2d3bb2b8d381d638f346d4eacd22242b
+  ENil 7e692e98c51ecc3979db3460069da31e
+  EPlus bc6beebc23bbcf8312bfcc25f097280b
+  ERec a9d3e204e1a48ef911cfeeb7440baac4
+  ETimes cc313bb5fdb46f217b7eb33b03ecacb9
+  ETl 317499e84249bbb02d1ade083cd121d6
+  EVar 26101e95c252c068ed62ac1c7f93d38e
+  Exp c9e31b143db1d694cdc766a03766f357
+  Id 3ce23624695e9db53ed4602027be97b9
+  Id 37ec743cab0dab77ff6e9884f6f093e6
+  Prog fce15127fd15db9d606d015b7f619232
+  Program 67ac9846a549e3c567c348dc9b71f9c8
+import  -/  ErrM 891511a0d247a63f97006997da116fd7
+  exports: 6a1a683d2b1212de37fcd511d370fe9e
+import  -/  PrintLambdaNat 5aa02d314e6e840196a4245d29db6f65
+  exports: de08f75bd3337ee8e539d8c5d6b7a40e
+import  -/  base-4.12.0.0:GHC.Base c00b75f0b052d05c55ba6a4dd1c63b26
+import  -/  base-4.12.0.0:GHC.Num c2039f03637c68f47b0bbff4c18ec616
+import  -/  base-4.12.0.0:Prelude 3c779dfd6448bdd8e234c336802c2acb
+import  -/  ghc-prim-0.5.3:GHC.Classes 0f6fd7d7db53fc48f6e1f01803cc6c9d
+fb732564729fd801d748e0a9110ebe6f
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Interpreter.$trModule3
+                   Interpreter.$trModule1) -}
+feec5b1245af2aecc0c274ae4896cd00
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Interpreter.$trModule2) -}
+fc1a3402364d2c09dbad85eaba4375c8
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Interpreter"#) -}
+e3dbfdac3c424491ff96ac8d7cd58b6e
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Interpreter.$trModule4) -}
+54137b00e9009d767926cf4edae023f7
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("LambdaNat-0.1.0.0-4B7roTwwXlI2zWJKCli09t"#) -}
+845d2243af16c90000f55de9f0865c85
+  $wexecCBN :: [AbsLambdaNat.Exp] -> [AbsLambdaNat.Exp]
+  {- Arity: 1, Strictness: <S,1*U>, Inline: [2] -}
+5afdf97be979a4880bcf36e51f636f11
+  evalCBN :: AbsLambdaNat.Exp -> AbsLambdaNat.Exp
+  {- Arity: 1, Strictness: <S,1*U> -}
+e00a73fccf21d41c24f887fb43cc9a3d
+  execCBN :: AbsLambdaNat.Program -> [AbsLambdaNat.Exp]
+  {- Arity: 1, Strictness: <S(S),1*U(1*U)>, Inline: [2],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: AbsLambdaNat.Program) ->
+                 case w of ww { AbsLambdaNat.Prog ww1 ->
+                 Interpreter.$wexecCBN ww1 }) -}
+fdd90b6559dfe2d21a0a35734e43347f
+  fresh :: AbsLambdaNat.Exp -> AbsLambdaNat.Id
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (0, True, True)
+                Interpreter.fresh1
+                  `cast`
+                (<AbsLambdaNat.Exp>_R ->_R Sym (AbsLambdaNat.N:Id[0])) -}
+751c2570a75bcaca2114e370ffbd1c78
+  fresh1 :: AbsLambdaNat.Exp -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (x :: AbsLambdaNat.Exp) -> Interpreter.fresh_aux x) -}
+2f557d7a881a8bf67bd5420656c15daa
+  fresh_aux :: AbsLambdaNat.Exp -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U> -}
+439c6517abcac41a2ec885c5797fb56e
+  subst ::
+    AbsLambdaNat.Id
+    -> AbsLambdaNat.Exp -> AbsLambdaNat.Exp -> AbsLambdaNat.Exp
+  {- Arity: 3, Strictness: <L,U><L,U><S,1*U> -}
+trusted: safe
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+
