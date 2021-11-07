@@ -82,7 +82,6 @@ subst id s (EInt n) = EInt n
 subst id s (EPlus e l) = EPlus (subst id s e) (subst id s l)
 subst id s (EMinus e l) = EMinus (subst id s e) (subst id s l)
 subst id s (ETimes e l) = ETimes (subst id s e) (subst id s l)
--- add the missing cases
 -- ENil
 subst id s (ENil) = ENil
 -- evalCBN (ECons e1 e2) = evalCBN (ECons e1 (ECons e2 ENil))
