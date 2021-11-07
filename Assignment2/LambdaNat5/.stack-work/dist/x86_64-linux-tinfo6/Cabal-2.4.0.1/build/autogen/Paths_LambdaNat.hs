@@ -29,12 +29,12 @@ version :: Version
 version = Version [0,1,0,0] []
 bindir, libdir, dynlibdir, datadir, libexecdir, sysconfdir :: FilePath
 
-bindir     = "/home/trentonfaillace/ProgrammingLanguages/Assignment2/LambdaNat5/.stack-work/install/x86_64-linux-tinfo6/lts-13.12/8.6.4/bin"
-libdir     = "/home/trentonfaillace/ProgrammingLanguages/Assignment2/LambdaNat5/.stack-work/install/x86_64-linux-tinfo6/lts-13.12/8.6.4/lib/x86_64-linux-ghc-8.6.4/LambdaNat-0.1.0.0-4B7roTwwXlI2zWJKCli09t"
-dynlibdir  = "/home/trentonfaillace/ProgrammingLanguages/Assignment2/LambdaNat5/.stack-work/install/x86_64-linux-tinfo6/lts-13.12/8.6.4/lib/x86_64-linux-ghc-8.6.4"
-datadir    = "/home/trentonfaillace/ProgrammingLanguages/Assignment2/LambdaNat5/.stack-work/install/x86_64-linux-tinfo6/lts-13.12/8.6.4/share/x86_64-linux-ghc-8.6.4/LambdaNat-0.1.0.0"
-libexecdir = "/home/trentonfaillace/ProgrammingLanguages/Assignment2/LambdaNat5/.stack-work/install/x86_64-linux-tinfo6/lts-13.12/8.6.4/libexec/x86_64-linux-ghc-8.6.4/LambdaNat-0.1.0.0"
-sysconfdir = "/home/trentonfaillace/ProgrammingLanguages/Assignment2/LambdaNat5/.stack-work/install/x86_64-linux-tinfo6/lts-13.12/8.6.4/etc"
+bindir     = "/mnt/c/Users/tfail/Desktop/Coding/ProgrammingLanguages/Assignment2/LambdaNat5/.stack-work/install/x86_64-linux-tinfo6/lts-13.12/8.6.4/bin"
+libdir     = "/mnt/c/Users/tfail/Desktop/Coding/ProgrammingLanguages/Assignment2/LambdaNat5/.stack-work/install/x86_64-linux-tinfo6/lts-13.12/8.6.4/lib/x86_64-linux-ghc-8.6.4/LambdaNat-0.1.0.0-4B7roTwwXlI2zWJKCli09t"
+dynlibdir  = "/mnt/c/Users/tfail/Desktop/Coding/ProgrammingLanguages/Assignment2/LambdaNat5/.stack-work/install/x86_64-linux-tinfo6/lts-13.12/8.6.4/lib/x86_64-linux-ghc-8.6.4"
+datadir    = "/mnt/c/Users/tfail/Desktop/Coding/ProgrammingLanguages/Assignment2/LambdaNat5/.stack-work/install/x86_64-linux-tinfo6/lts-13.12/8.6.4/share/x86_64-linux-ghc-8.6.4/LambdaNat-0.1.0.0"
+libexecdir = "/mnt/c/Users/tfail/Desktop/Coding/ProgrammingLanguages/Assignment2/LambdaNat5/.stack-work/install/x86_64-linux-tinfo6/lts-13.12/8.6.4/libexec/x86_64-linux-ghc-8.6.4/LambdaNat-0.1.0.0"
+sysconfdir = "/mnt/c/Users/tfail/Desktop/Coding/ProgrammingLanguages/Assignment2/LambdaNat5/.stack-work/install/x86_64-linux-tinfo6/lts-13.12/8.6.4/etc"
 
 getBinDir, getLibDir, getDynLibDir, getDataDir, getLibexecDir, getSysconfDir :: IO FilePath
 getBinDir = catchIO (getEnv "LambdaNat_bindir") (\_ -> return bindir)

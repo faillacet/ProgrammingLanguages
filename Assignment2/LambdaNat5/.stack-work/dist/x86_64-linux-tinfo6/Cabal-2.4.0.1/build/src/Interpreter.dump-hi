@@ -1,9 +1,9 @@
 
 ==================== FINAL INTERFACE ====================
-2021-11-05 19:40:22.5266042 UTC
+2021-11-07 18:48:53.4849425 UTC
 
 interface LambdaNat-0.1.0.0-4B7roTwwXlI2zWJKCli09t:Interpreter 8064
-  interface hash: 76d41e39c2c1337e82d0f531dd365cb7
+  interface hash: 3773ba30eb5b9944ed37cc34db544987
   ABI hash: ac4406e5eac8b5b2712e43e4cb091158
   export-list hash: 101e3c62302ced1c8f7dbc16da3eca0e
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
@@ -38,6 +38,7 @@ import  -/  AbsLambdaNat 9df55100b69ab990e20c11e484019614
   EHd 9cb7842aeb102a215277c82af387ce1d
   EIf d4ea161237c1abb021807db980055ccd
   EInt fd14b8c08867b4fdad0d5f467fda15c7
+  ELE c59aa2bbea9f5c0384a3a40d6ff053bf
   ELet 1e24a1bf09cfea869140ad9830b09a96
   EMinus 2d3bb2b8d381d638f346d4eacd22242b
   ENil 7e692e98c51ecc3979db3460069da31e
