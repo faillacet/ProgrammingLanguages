@@ -18,13 +18,19 @@ evalCBN (ERec i e1 e2) = evalCBN (EApp (EAbs i e2) (EFix (EAbs i e1)))
 evalCBN (EFix e) = evalCBN (EApp e (EFix e)) 
 -- evalCBN ENil 
 evalCBN ENil = ENil
--- evalCBN (ECons e1 e2) -- e1 int -- e2 end of list
-evalCBN (ECons e1 e2) = evalCBN (ECons e1 (ECons e2 ENil))
+-- evalCBN (ECons e1 e2) -- e1 int -- e2 rest of list
+evalCBN (ECons e1 e2) = ECons (evalCBN e1) (evalCBN e2)
 -- evalCBN (EHd e) 
-evalCBN (EHd e) = evalCBN (ECons e ENil)
+evalCBN (EHd e) = case (evalCBN e) of (ECons e1 e2) -> evalCBN e1
 -- evalCBN (ETl e) 
-evalCBN (ETl e) = evalCBN (ECons ENil e)
+evalCBN (ETl e) = case (evalCBN e) of (ECons e1 e2) -> evalCBN e2
 -- evalCBN (ELE e1 e2)
+evalCBN (ELE e1 e2) = case (evalCBN e1) of 
+    (EInt n) -> case (evalCBN e2) of 
+        (EInt m) -> case (n <= m) of
+            True -> EInt 1
+            False -> EInt 0
+
 evalCBN (EPlus e1 e2) = case (evalCBN e1) of
     (EInt n) -> case (evalCBN e2) of
         (EInt m) -> EInt (n+m)
@@ -78,10 +84,13 @@ subst id s (EMinus e l) = EMinus (subst id s e) (subst id s l)
 subst id s (ETimes e l) = ETimes (subst id s e) (subst id s l)
 -- add the missing cases
 -- ENil
-subst id s (ENil) = subst id s ENil
+subst id s (ENil) = ENil
 -- evalCBN (ECons e1 e2) = evalCBN (ECons e1 (ECons e2 ENil))
-subst id s (ECons e1 e2) = subst id s (ECons e1 (ECons e2 ENil))
+subst id s (ECons e1 e2) = ECons (subst id s e1) (subst id s e2)
 -- evalCBN (EHd e) 
-subst id s (EHd e) = subst id s (ECons e ENil)
+subst id s (EHd e) = EHd (subst id s e)
 -- evalCBN (ETl e)
-subst id s (ETl e) = subst id s (ECons ENil e)
+subst id s (ETl e) = ETl (subst id s e)
+
+
+-- 
