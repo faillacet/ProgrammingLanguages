@@ -1,7 +1,5 @@
 # Critical Apprasial
 
-Group: Trenton Faillace
-
 * Part 1 and 2
 
 Part 1 and two were relativly easy for me and was sort of just an extension of the first assignment.  There was a bit of confusion

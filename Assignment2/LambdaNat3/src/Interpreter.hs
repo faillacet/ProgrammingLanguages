@@ -26,11 +26,25 @@ evalCBN :: Exp -> Exp
 evalCBN (EApp e1 e2) = case (evalCBN e1) of
     (EAbs i e3) -> evalCBN (subst i e2 e3)
     e3 -> EApp e3 e2
-evalCBN ENat0 = ENat0 
-evalCBN (ENatS e) = ENatS (evalCBN e)
 ----------------------------------------------------
 --- YOUR CODE goes here for extending the interpreter
 ----------------------------------------------------
+evalCBN (ENat0) = ENat0
+evalCBN (ENatS e) = ENatS (evalCBN e)
+
+evalCBN (EMinusOne (ENatS e)) = evalCBN e
+evalCBN (EMinusOne (ENat0)) = ENat0
+
+evalCBN (EIf e1 e2 e3 e4) = if (evalCBN e1) == (evalCBN e2) then (evalCBN e3) else (evalCBN e4)
+
+evalCBN (ELet x e1 e2) = evalCBN (EApp (EAbs x e2) e1)
+
+evalCBN (EFix e) = evalCBN (EApp e (EFix e))
+
+evalCBN (ERec x e1 e2) = evalCBN (EApp (EAbs x e2) (EFix e1))
+
+---------------------------------------------------
+
 evalCBN x = x -- this is a catch all clause, currently only for variables, must be the clause of the eval function
 
 -- fresh generates fresh names for substitutions, can be ignored for now
@@ -39,7 +53,7 @@ fresh_aux :: Exp -> String
 fresh_aux (EVar (Id i)) = i ++ "0"
 fresh_aux (EApp e1 e2) = fresh_aux e1 ++ fresh_aux e2
 fresh_aux (EAbs (Id i) e) = i ++ fresh_aux e
-fresh_aux _ = "0"
+--fresh_aux _ = "0"
 
 fresh = Id . fresh_aux -- for Id see AbsLamdaNat.hs
 
@@ -59,5 +73,23 @@ subst id s (EAbs id1 e1) =
 ----------------------------------------------------------------
 --- YOUR CODE goes here if subst needs to be extended as well
 ----------------------------------------------------------------
-subst id s ENat0 = ENat0 
+subst id s (ENat0) = ENat0
 subst id s (ENatS e) = ENatS (subst id s e)
+
+subst id s (EIf e1 e2 e3 e4) = EIf (subst id s e1) (subst id s e2) (subst id s e3) (subst id s e4)
+subst id s (ELet x e1 e2) = ELet (subst id s e2) (subst id s e1)
+
+
+
+
+
+
+
+
+
+
+
+
+-- evalCBN (ELet x e1 e2) = evalCBN (EApp (EAbs x e2) e1)
+-- evalCBN (EFix e) = evalCBN (EApp e (EFix e))
+-- evalCBN (ERec x e1 e2) = mevalCBN (EApp (EAbs x e2) (Efix e1))
