@@ -56,7 +56,7 @@ let rec map = \f. \list.
         (f (hd list)):(map f (tl list))
         
 in
-map plus_two 1:2:3:#
+map plus_two 1:y:3:#
 
 ;;
 
