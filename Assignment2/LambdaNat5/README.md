@@ -1,11 +1,13 @@
 # Critical Apprasial
 
 * Part 1 and 2
+
 Part 1 and two were relativly easy for me and was sort of just an extension of the first assignment.  There was a bit of confusion
 with not understanding how the subsituion functions work.  But once I made a connection betweens its function
 and beta reductions it started to make more sense.  However, I will talk about part 3 as it had the most substance.
 
 * Part 3
+
 I will start out by talking about the challenges I faced while completing this part.
 To me, the hardest part was understanding the workings of the Interpreter.hs file as well as coming up with the required functions.
 This came down to going to office hours with Dan and coming to an understanding by thinking of EHd and ETl in a type setting sort of manner.
