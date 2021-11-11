@@ -1,6 +1,6 @@
 # Critical Apprasial
 
-Group: Trenton Faillace
+Group: Trenton Faillace, Erik Hombledal
 
 * Part 1 and 2
 
