@@ -1,0 +1,18 @@
+:quit
+:help
+exit
+member 2 [1,1,1];;
+member 2 [1,1,1]
+member 1 [1,2,3];;
+plusone 5;;
+:load test/examples.lc
+head 1:[2,3];;
+head 1:[2,3]
+1:[2,3];;
+[1, [2, 3]];;
+[1,2,3];;
+tail [];;
+head [];;
+tail [2,3];;
+head [2,3];;
+:help

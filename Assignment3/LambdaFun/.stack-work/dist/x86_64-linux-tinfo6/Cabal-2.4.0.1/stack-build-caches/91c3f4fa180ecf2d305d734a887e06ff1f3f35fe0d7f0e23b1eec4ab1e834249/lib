@@ -1,0 +1,38 @@
+/home/faillace/ProgrammingLanguages/Assignment3/LambdaFun/src/LamFunLexer.hs:
+  hash: 6f8ac09c698663424b0880d9b2cff0bd8b3a0077e8648991f773b59612e3ca49
+? /home/faillace/ProgrammingLanguages/Assignment3/LambdaFun/.stack-work/dist/x86_64-linux-tinfo6/Cabal-2.4.0.1/build/autogen/cabal_macros.h
+: hash: 3b7348b87938e8174f686db6dfd8d0971e7dacc9d786fb8961cd52014b876dad
+/home/faillace/ProgrammingLanguages/Assignment3/LambdaFun/LamFun.cabal:
+  hash: 0221fe542d661c0660fc0721182236a94851eff090a0354b73e0817015404b8a
+/home/faillace/ProgrammingLanguages/Assignment3/LambdaFun/src/LamArrayInterpreter.hs:
+  hash: 84979df7068c7c93e87d4e9483e8f003caf759d01074846efcb59767cd0580ea
+/home/faillace/ProgrammingLanguages/Assignment3/LambdaFun/src/Memory.hs:
+  hash: ae2b75b992f74090173659fe47aaa92abbd17771b789365a2291d1c9648b0e89
+/home/faillace/ProgrammingLanguages/Assignment3/LambdaFun/src/LamFunSyntax.hs:
+  hash: 2530ab9212a08c93a99c4dbcc433890648f1335861bfd6f0a6568289fe7f011c
+/home/faillace/ProgrammingLanguages/Assignment3/LambdaFun/src/LamRecInterpreter.hs:
+  hash: 81cbc278fe24cec2702e83b07a4bcd713ff919ab97ef807f8021e7925c370519
+/home/faillace/ProgrammingLanguages/Assignment3/LambdaFun/package.yaml:
+  hash: 880b93bb175d405aff9cf5caea3f73a5422f35647f5d0714eee7ae67e854a90c
+/home/faillace/ProgrammingLanguages/Assignment3/LambdaFun/README.md:
+  hash: 6f55e35aa606da009a17b065db5fed1fb8824d6de482fc5417da06413566c2cb
+/home/faillace/ProgrammingLanguages/Assignment3/LambdaFun/src/LamMemInterpreter.hs:
+  hash: 86304216f713eb0ae8271a651da71bbd1fef0810d4543cad01501377eb645992
+/home/faillace/ProgrammingLanguages/Assignment3/LambdaFun/src/LamInterpreter.hs:
+  hash: 96f7069c8a856137163f3201afd95f87aa34089fc66bc49baf95e218c3238ee3
+/usr/include/stdc-predef.h:
+  hash: 64fdf694f7b3d51ec6c45c06dcb71ebbe9455742d3ea673012016668853d3bff
+/home/faillace/ProgrammingLanguages/Assignment3/LambdaFun/src/LamNatInterpreter.hs:
+  hash: f714f3e0bded7d3f37d48c40288d3894f7db28c0f7716cc342557665c50520c9
+/home/faillace/ProgrammingLanguages/Assignment3/LambdaFun/src/Utils.hs:
+  hash: fd92ea2714052a964e64d8a31ebef29b353731382c319514b73f9ddde369113f
+/home/faillace/.stack/programs/x86_64-linux/ghc-tinfo6-8.6.4/lib/ghc-8.6.4/include/ghcversion.h:
+  hash: 529291d4a255ef1c3ec99116d8dca391f2db7bad8b5eab6dcbf9a70354c6eedf
+/home/faillace/ProgrammingLanguages/Assignment3/LambdaFun/src/LamFunParser.hs:
+  hash: 27af1b72976599b0e4009b9200db2e00f9158c8d989493801934386ab316102e
+? /home/faillace/ProgrammingLanguages/Assignment3/LambdaFun/.stack-work/dist/x86_64-linux-tinfo6/Cabal-2.4.0.1/build/autogen/Paths_LamFun.hs
+: hash: 471d37eea16a5989455bf13ae1898f0d5023aad541f26c19a52664e7739e3341
+/home/faillace/ProgrammingLanguages/Assignment3/LambdaFun/src/LamFunInterpreter.hs:
+  hash: aa1962f1cf78503f1320fe2fc9fde309e8b9cff954eabc342af8a0315e12f87d
+/home/faillace/ProgrammingLanguages/Assignment3/LambdaFun/src/Environment.hs:
+  hash: d10dc55d4bbad3d0c1878ad972ad90d654826e046d6e7e5d20e4fa506246df44

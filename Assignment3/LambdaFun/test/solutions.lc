@@ -1,0 +1,30 @@
+-- member function
+-- takes element and list and retuns true if in list false if not
+rec member = \x.\y. case y of {
+    [] -> false,
+    (a:as) -> case x == a of { true -> true, _ -> member x as } };;
+}
+
+-- remove function
+-- takes element and list and removes first occurance of element
+rec remove = \x.\y. case y of {
+
+}
+
+-- sum function
+-- takes a list of ints and sums the elements
+
+-- prod function
+-- takes a list of ints and multiplies elements
+
+-- plus_two function
+-- takes an int and adds 2
+
+-- map function
+-- takes a function and a list and recusively applies function to each element in list
+
+-- insert function
+-- takes int and list and appends element to list
+
+-- sort function
+-- takes a list of ints and recursivly sorts list
