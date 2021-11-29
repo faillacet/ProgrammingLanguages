@@ -2,29 +2,66 @@
 -- takes element and list and retuns true if in list false if not
 rec member = \x.\y. case y of {
     [] -> false,
-    (a:as) -> case x == a of { true -> true, _ -> member x as } };;
-}
+    (a:as) -> case x == a of { true -> true, _ -> member x as }
+};;
 
 -- remove function
 -- takes element and list and removes first occurance of element
-rec remove = \x.\y. case y of {
-
-}
+rec remove = \x.\y.
+    case (member x y) of {
+        false -> y,
+        true -> case y of {
+            (a:as) -> case x == a of {
+                true -> as,
+                false -> a:(remove x as)
+                }
+            }
+    };;
 
 -- sum function
 -- takes a list of ints and sums the elements
+rec sum = \x.
+    case x of {
+        [] -> 0,
+        (a:as) -> a + sum as
+    };;
 
 -- prod function
 -- takes a list of ints and multiplies elements
+rec prod = \x.
+    case x of {
+        [] -> 1,
+        (a:as) -> a * prod as
+    };;
 
 -- plus_two function
 -- takes an int and adds 2
+rec plustwo = \x. x+2;;
 
 -- map function
 -- takes a function and a list and recusively applies function to each element in list
+rec map = \x.\y.
+    case y of {
+        [] -> y,
+        (a:as) -> (x a):(map x as)
+    };;
 
 -- insert function
 -- takes int and list and appends element to list
+rec insert = \x.\y.
+    case y of {
+        [] -> x:y,
+        (a:as) ->
+            case x < a of {
+                true -> x:y,
+                false -> a:(insert x as)
+            }
+    };;
 
 -- sort function
 -- takes a list of ints and recursivly sorts list
+rec sort = \x.
+    case x of {
+        [] -> x,
+        (a:as) -> insert a (sort as)
+    };;

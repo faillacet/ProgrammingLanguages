@@ -1,4 +1,72 @@
 :quit
+sort [1,4,3,9];;
+sort [5,3,2];;
+:load test/solutions.lc
+insert 4 [1,6];;
+insert 5 [1,2,3];;
+:load test/solutions.lc
+map plustwo [1,2,3];;
+5:[1,2,3];;
+map plustwo [1,2,3];;
+:load test/solutions.lc
+map plustwo [];;
+map plustwo [1,2,3];;
+:load test/solutions.lc
+plustwo 5;;
+plustwo 5
+:load test/solutions.lc
+:load test/solutions.lc
+prod [1,2,3];;
+:load test/solutions.lc
+prod [1,2,3];;
+:load test/solutions.lc
+:quit
+sum [];;
+sum []
+sum [1,2,3];;
+sum [1,2,3]
+:load test/solutions.lc
+:quit
+remove 4 [2,3,4];;
+remove 2 [2,3,4];;
+remove 3 [2,3,4];;
+remove 1 [2,3,4];;
+:load test/solutions.lc
+:load test/solutions.lc
+:load test/solutions.lc
+:quit
+remove 1 [2,3,4];;
+:load test/solutions.lc
+:quit
+remove 1 [2,3,4];;
+:load test/solutions.lc
+:quit
+remove 1 [2,3,4];;
+:load test/solutions.lc
+:quit
+remove 1 [2,3,4];;
+:load test/solutions.lc
+:quit
+remove 1 [2,3,4];;
+:load test/solutions.lc
+:quit
+remove 1 [2,3,4];;
+:load test/solutions.lc
+:quit
+remove 5 [1,2,3];;
+remove 5 [1,2,3]
+:load test/solutions.lc
+:quit
+remove 5 [1,2,3];;
+remove 5 [1,2,3]
+remove 2 [1,2,3];;
+remove 1 [1,2,3];;
+member 1 [1,2,3];;
+:load test/solutions.lc
+:load test/solutions.lc
+:load test/solutions.lc
+:load test/solutions.lc
+:quit
 :help
 exit
 member 2 [1,1,1];;
