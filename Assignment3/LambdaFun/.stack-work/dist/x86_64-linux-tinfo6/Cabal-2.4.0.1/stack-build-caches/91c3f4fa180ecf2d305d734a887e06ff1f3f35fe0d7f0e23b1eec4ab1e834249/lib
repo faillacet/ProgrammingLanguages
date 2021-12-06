@@ -3,7 +3,7 @@
 ? /home/faillace/ProgrammingLanguages/Assignment3/LambdaFun/.stack-work/dist/x86_64-linux-tinfo6/Cabal-2.4.0.1/build/autogen/cabal_macros.h
 : hash: 3b7348b87938e8174f686db6dfd8d0971e7dacc9d786fb8961cd52014b876dad
 /home/faillace/ProgrammingLanguages/Assignment3/LambdaFun/LamFun.cabal:
-  hash: 0221fe542d661c0660fc0721182236a94851eff090a0354b73e0817015404b8a
+  hash: b2fe8a284de1633d831e7d0afeb3cc0d9687507df542926afa6fcd5615d6012a
 /home/faillace/ProgrammingLanguages/Assignment3/LambdaFun/src/LamArrayInterpreter.hs:
   hash: 84979df7068c7c93e87d4e9483e8f003caf759d01074846efcb59767cd0580ea
 /home/faillace/ProgrammingLanguages/Assignment3/LambdaFun/src/Memory.hs:
@@ -14,10 +14,8 @@
   hash: 81cbc278fe24cec2702e83b07a4bcd713ff919ab97ef807f8021e7925c370519
 /home/faillace/ProgrammingLanguages/Assignment3/LambdaFun/package.yaml:
   hash: 880b93bb175d405aff9cf5caea3f73a5422f35647f5d0714eee7ae67e854a90c
-/home/faillace/ProgrammingLanguages/Assignment3/LambdaFun/README.md:
-  hash: 6f55e35aa606da009a17b065db5fed1fb8824d6de482fc5417da06413566c2cb
 /home/faillace/ProgrammingLanguages/Assignment3/LambdaFun/src/LamMemInterpreter.hs:
-  hash: 86304216f713eb0ae8271a651da71bbd1fef0810d4543cad01501377eb645992
+  hash: 067953b882be6667cc36a41fdf5d3629f24930d021daed27413d44749713421c
 /home/faillace/ProgrammingLanguages/Assignment3/LambdaFun/src/LamInterpreter.hs:
   hash: 96f7069c8a856137163f3201afd95f87aa34089fc66bc49baf95e218c3238ee3
 /usr/include/stdc-predef.h:

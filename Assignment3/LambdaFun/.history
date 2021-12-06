@@ -1,4 +1,13 @@
 :quit
+:exit
+:load solutions.lc
+:load linked-list
+:load linked-list.lc
+:env
+:help
+:quit
+val a = new [];;
+:quit
 sort [1,4,3,9];;
 sort [5,3,2];;
 :load test/solutions.lc

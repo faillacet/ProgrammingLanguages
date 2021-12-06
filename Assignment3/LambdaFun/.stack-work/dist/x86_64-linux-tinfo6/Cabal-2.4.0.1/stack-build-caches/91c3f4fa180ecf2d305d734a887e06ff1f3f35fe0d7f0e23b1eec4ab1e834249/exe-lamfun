@@ -1,11 +1,9 @@
 /home/faillace/ProgrammingLanguages/Assignment3/LambdaFun/LamFun.cabal:
-  hash: 0221fe542d661c0660fc0721182236a94851eff090a0354b73e0817015404b8a
+  hash: b2fe8a284de1633d831e7d0afeb3cc0d9687507df542926afa6fcd5615d6012a
 /home/faillace/ProgrammingLanguages/Assignment3/LambdaFun/package.yaml:
   hash: 880b93bb175d405aff9cf5caea3f73a5422f35647f5d0714eee7ae67e854a90c
-/home/faillace/ProgrammingLanguages/Assignment3/LambdaFun/README.md:
-  hash: 6f55e35aa606da009a17b065db5fed1fb8824d6de482fc5417da06413566c2cb
 /home/faillace/ProgrammingLanguages/Assignment3/LambdaFun/app/Main.hs:
-  hash: 254f85263afa84a13aa008b2839b1e2cd9bf3b96495c22170541801fea9e0e7c
+  hash: 473550afc89b80e3bcc2dca459b74595bb1a974af33664e7c9ba59a2329b5d5a
 /usr/include/stdc-predef.h:
   hash: 64fdf694f7b3d51ec6c45c06dcb71ebbe9455742d3ea673012016668853d3bff
 ? /home/faillace/ProgrammingLanguages/Assignment3/LambdaFun/.stack-work/dist/x86_64-linux-tinfo6/Cabal-2.4.0.1/build/lamfun/autogen/Paths_LamFun.hs

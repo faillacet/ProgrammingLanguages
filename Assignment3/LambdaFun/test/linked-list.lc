@@ -8,13 +8,13 @@ val cons = \e. \a.
     b := [e,a];
     b ;;
 
-val head = \a.
+val hd = \a.
     case !a of {
         "NULL"-> "tried to take the head of an empty list",
         [e,a'] -> e 
     } ;;
 
-val tail = \a.
+val tl = \a.
     case !a of {
         "NULL" -> "tried to take the tail of an empty list",
         [e,a'] -> a'

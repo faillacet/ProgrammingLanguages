@@ -1,0 +1,14 @@
+:setLang LamMem
+:help
+:setLang LamMem
+:help
+:setLang LamMem
+:help
+:setLang LamMem
+:env
+:help
+:load round-robin.lc
+:load round-robin.lc
+:load round-robin-test.lc
+:quit
+:load round-robin.lc
